@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	 xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	 xmlns:p="http://www.springframework.org/schema/p"
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 https://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="emp1" class="com.spring.collection.Employee" >
+		<property name="name" value="Sushant" />
+		<!-- Duplicate Value  Allowed -->
+		<property name="phones">
+			<list>
+				<value>9821373</value>
+				<value>9837834</value>
+				<value>982454</value>
+				<null/>
+			</list>
+		</property>
+		
+		<!-- Duplicate Value not Allowed -->
+		<property name="addresses">
+			<set>
+				<value>KTM</value>
+				<value>Kolvi</value>
+			</set>
+		</property>
+		
+		<property name="courses">
+			<map>
+				<entry key="java" value="3.5 Month" />
+				<entry key="python" value="2.5 Month" />
+				<entry key="AI" value="3.5 Month" />
+			</map>
+		</property>
+		
+<!-- 		<property name="">
+			<props>
+				<prop key="name">Sushant</prop>
+				<prop key="Cast">Chaudhary</prop>
+			</props>
+		</property> -->
+		
+	</bean>
+
+
+</beans>
+

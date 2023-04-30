@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	 xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	 xmlns:p="http://www.springframework.org/schema/p"
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 https://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- This is Our Beans First Method Value as Element -->
+	<!-- <bean class="com.SpringCore.SpringCore.Student" name="student1">
+		<property name="stid">
+			<value>12323</value>
+		</property>
+		<property name="stu_name">
+			<value>Sushant</value>
+		</property>
+		<property name="stu_address">
+			<value>Dhodharpa</value>
+		</property>	
+	</bean> -->
+	
+	
+	<!-- This is Our Beans Second Method Value as Attribute -->
+	<!-- <bean class="com.SpringCore.SpringCore.Student" name="student1">
+		<property name="stid" value="1234" />
+		<property name="stu_name" value="Prashant" />
+		<property name="stu_address" value="Bara" />
+	</bean>
+	
+	<bean class="com.SpringCore.SpringCore.Student" name="student2">
+		<property name="stid" value="134" />
+		<property name="stu_name" value="Sushant" />
+		<property name="stu_address" value="Dhodharpa" />
+	</bean> -->
+	
+	
+	<!-- This is Our Beans Third Method p Schema -->
+	<bean class="com.SpringCore.SpringCore.Student" name="student1" p:stid="12" p:stu_name="Alex" p:stu_address="Nepal" />
+	<bean class="com.SpringCore.SpringCore.Student" name="student2" p:stid="142" p:stu_name="Kshitize" p:stu_address="Kolvi" />
+</beans>
+
